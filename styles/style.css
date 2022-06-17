@@ -1,0 +1,66 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body{
+  background-color: aquamarine;
+  box-sizing: border-box;
+}
+
+main{
+  margin: 50px auto;
+  background-color: rgb(255, 254, 252);
+  width: 25%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#screen{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#progress-bar{
+  height: 35%;
+  width: 100%;
+  font-size: 15px;
+}
+
+#current-number{
+  height: 75%;
+  width: 100%;
+  font-size: 25px;
+  border-bottom: 1px solid black;
+}
+
+#buttons{
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.operation, .digit, .control, .digitAdjust, .total{
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  padding: 10px 0;
+  border-radius: 5px;
+}
